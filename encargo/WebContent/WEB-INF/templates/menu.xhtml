@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<h:outputStylesheet name="css/bootstrap.min.css"></h:outputStylesheet>
+	<h:outputStylesheet name="css/tema_fami.css"></h:outputStylesheet>
+	<title>Encargo</title>
+</h:head>
+<h:body>
+	<h:form>
+		<p:growl id="messages" showDetail="false" />
+		<div class="nav-side-menu">
+			<p:menu toggleable="true" styleClass="">
+				<p:submenu label="Administración">
+					<p:menuitem value="cliente" outcome="/pages/cliente.xhtml"
+						update="messages" icon="ui-icon-disk" />
+				</p:submenu>
+			</p:menu>
+		</div>
+	</h:form>
+</h:body>
+</html>
